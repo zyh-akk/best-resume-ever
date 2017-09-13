@@ -1,5 +1,6 @@
 /* eslint-disable */
 export const PERSON = {
+  lang: 'en',
   name: {
     first: 'John',
     middle: '',

@@ -13,7 +13,7 @@
   </div>
   <div class="left half">
     <div class="experience">
-      <h3>Experience</h3>
+      <h3>{{i18n[person.lang].experience}}</h3>
       <div class="experience-block" v-for="experience in person.experience">
         <span class="company"> {{experience.company}} </span>
         <span class="job-title"> {{experience.position}} </span>
@@ -73,13 +73,15 @@
 import {
   PERSON
 } from '../person';
+import i18n from '../i18n/i18n';
 
 import Vue from 'vue';
 export default Vue.component('left-right', {
   name: 'left-right',
   data () {
     return {
-      person: PERSON
+      person: PERSON,
+      i18n: i18n
     };
   }
 });
